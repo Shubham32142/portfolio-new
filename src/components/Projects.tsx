@@ -1,24 +1,35 @@
 import React from "react";
 import { ExternalLink, Github } from "lucide-react";
-
+import SchoolManagementSystem from "../Public/School Management system.jpeg";
+import Ecommerce from "../Public/Ecommerce.avif";
+import youtubeClone from "../Public/YoutubeClone.avif";
+import weatherApp from "../Public/weatherApp.avif";
+import registrationApi from "../Public/registration api.jpeg";
+import libraryManager from "../Public/library smanagement.jpeg";
+import memoryGame from "../Public/memorygame.png";
+import studentRegistration from "../Public/studentRegistration.png";
 const projects = [
   {
     title: "E-Commerce Platform",
     description:
       "A full-featured e-commerce platform built with React and Node.js",
-    image:
-      "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80",
-    technologies: ["React", "Node.js", "MongoDB"],
+    image: Ecommerce,
+    technologies: ["React", "Node.js", "MongoDB", "CSS3", "Express"],
     githubLink: "https://github.com/Shubham32142/Ecommerce_website",
-    liveLink: "https://example.com",
+    liveLink: "https://ecommerce-website-frontend-3k1v.onrender.com/",
   },
   {
     title: "Youtube Clone",
-    description:
-      "A collaborative task management application with real-time updates",
-    image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80",
-    technologies: ["React", "Cloudinary", "Tailwind CSS", "Nodejs", "Mongodb"],
+    description: "A Youtube clone from scratch including backend and frontend",
+    image: youtubeClone,
+    technologies: [
+      "React",
+      "Cloudinary",
+      "Tailwind CSS",
+      "Nodejs",
+      "Mongodb",
+      "Express",
+    ],
     githubLink: "https://github.com/Shubham32142/Youtube-clone",
     liveLink: "https://youtube-frontend-ssms.onrender.com/",
   },
@@ -26,11 +37,50 @@ const projects = [
     title: "Weather Dashboard",
     description:
       "A weather application with detailed forecasts and interactive maps",
-    image:
-      "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&q=80",
+    image: weatherApp,
     technologies: ["HTML5", "CSS3", "OpenWeather API", "Javascript"],
     githubLink: "https://github.com/Shubham32142/weather_app",
     liveLink: "https://weatherforecasteapp.netlify.app/",
+  },
+  {
+    title: "School Management System",
+    description:
+      "An intermediate school management system API with CRUD operation and Authentication ",
+    image: SchoolManagementSystem,
+    technologies: ["Node.js", "Express", "Mongodb", "Cloudinary"],
+    githubLink: "https://github.com/Shubham32142/School-management-system",
+  },
+  {
+    title: "Student Registration Page",
+    description: "An application to show basic knowledge of javascript",
+    image: studentRegistration,
+    technologies: ["HTML5", "CSS3", "Javascript"],
+    githubLink: "https://github.com/Shubham32142/student_registration_form",
+    liveLink: "https://studentregistrationsys.netlify.app/",
+  },
+  {
+    title: "Basic Registration API",
+    description: "An API for Register and login user",
+    image: registrationApi,
+    technologies: ["Node.js", "Express", "MongoDB"],
+    githubLink: "https://github.com/Shubham32142/student_registration_form",
+    liveLink: "https://registration-api-l9qx.onrender.com",
+  },
+  {
+    title: "Memory Game",
+    description: "Memory game to check your memory to remember things",
+    image: memoryGame,
+    technologies: ["React", "Tailwind CSS"],
+    githubLink: "https://github.com/Shubham32142/memory-game",
+    liveLink: "https://memory-game-yqm0.onrender.com",
+  },
+  {
+    title: "Online Library system",
+    description: "A library system to add new books",
+    image: libraryManager,
+    technologies: ["React", "CSS3"],
+    githubLink: "https://github.com/Shubham32142/Online_Library",
+    liveLink: "https://online-library-csag.onrender.com/",
   },
 ];
 
@@ -51,7 +101,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-3"
             >
               <img
                 src={project.image}

@@ -10,12 +10,12 @@ const skillCategories = [
   {
     title: "Backend Development",
     icon: <Terminal className="w-6 h-6 text-green-600 dark:text-green-400" />,
-    skills: ["Node.js", "Express", "REST APIs"],
+    skills: ["Node.js", "Express", "AWS", "REST APIs"],
   },
   {
     title: "Database",
     icon: <Database className="w-6 h-6 text-purple-600 dark:text-purple-400" />,
-    skills: ["MongoDB", "MongoDB Atlas", "Firebase"],
+    skills: ["MongoDB", "Firebase", "MongoDB Atlas"],
   },
   {
     title: "Design",
@@ -41,7 +41,7 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg"
+              className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg hover:-translate-y-2 transition-transform duration-150"
             >
               <div className="flex items-center mb-4">
                 {category.icon}
